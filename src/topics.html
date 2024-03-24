@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/eventemitter2@6.4.9/lib/eventemitter2.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/roslib@1/build/roslib.min.js"></script>
+  <script type="module" src="js/topics.js"></script>
+  <script src="js/json-to-pretty-yaml.js"></script>
+  <style>
+    #topics { line-height: 1.2em; }
+    #topic-view {
+      display: none;
+    }
+    #topic-message {
+      display: none;
+      white-space: pre;
+      font-family: monospace;
+    }
+    .counter { color: #b9b9b9; margin-bottom: 1em; }
+    #topic-type { font-family: monospace; font-size: 0.5em; vertical-align: super; font-weight: normal; }
+    .topic { font-family: monospace; }
+    body.closed { background-color: rgb(207, 207, 207); }
+  </style>
+</head>
+<body>
+  <h1>&nbsp;</h1>
+  <ul id="topics"></ul>
+  <code id="topic-message">No messages received</code>
+</body>
+</html>
